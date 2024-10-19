@@ -21,6 +21,22 @@
         <span id="jumpTo">10</span>seconds,redirection automatique vers la page d'accueil.
         <p><button>Retour immédiat</button></p>
     </div>
+    <script>
+        //逻辑：加载页面时，应该触发一个定时器10s
+        window.onload = function(){
+            let timer = 10
+            setInterval(()=>{
+                timer--;
+                document.getElementById('jumpTo').innerText = timer;
+                if(timer==0){
+                    location.href = 'https://github.com/ArthurXian'
+                }
+            },1000);
+        }
+        document.getElementsByTagName('button')[0].onclick = function(){
+            location.href = 'https://github.com/ArthurXian';
+        }
+    </script>
     
 </body>
 </html>

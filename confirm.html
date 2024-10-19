@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height:280px;
+            background-color: #eee;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        button{
+            margin: 30px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>produit:du fromage</p>
+        <p>produit: du pain</p>
+        <p>produit: du vin</p>
+        <p>produit: des pommes</p>
+        <p>produit: des légumes</p>
+        <p>produit: du lait</p>
+        <p>
+            <button>annuler</button>
+            <button>payer</button>
+        </p>
+    </div>
+    <script>
+        //逻辑：点击支付，出现确认框
+        document.getElementsByTagName('button')[1].onclick=function(){
+           let res = window.confirm('Avez-vous décidé');
+           if(res){
+            location.href = './succ.html';
+           }
+        }
+    </script>
+    
+</body>
+</html>
