@@ -3,42 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product List</title>
     <style>
-        div{
-            width: 200px;
-            height:280px;
-            background-color: #eee;
-            padding: 20px;
-            margin: 0 auto;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        button{
-            margin: 30px 25px;
+
+        div {
+            width: 300px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 15px 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div>
-        <p>produit:du fromage</p>
-        <p>produit: du pain</p>
-        <p>produit: du vin</p>
-        <p>produit: des pommes</p>
-        <p>produit: des légumes</p>
-        <p>produit: du lait</p>
+        <p>Produit: Du fromage</p>
+        <p>Produit: Du pain</p>
+        <p>Produit: Du vin</p>
+        <p>Produit: Des pommes</p>
+        <p>Produit: Des légumes</p>
+        <p>Produit: Du lait</p>
         <p>
-            <button>annuler</button>
-            <button>payer</button>
+            <button>Annuler</button>
+            <button>Payer</button>
         </p>
     </div>
     <script>
-        //逻辑：点击支付，出现确认框
-        document.getElementsByTagName('button')[1].onclick=function(){
-           let res = window.confirm('Avez-vous décidé');
+        // Logic: Clicking the "payer" button triggers a confirmation box
+        document.getElementsByTagName('button')[1].onclick = function(){
+           let res = window.confirm('Avez-vous décidé?');
            if(res){
             location.href = './succ.html';
            }
         }
     </script>
-    
 </body>
 </html>
