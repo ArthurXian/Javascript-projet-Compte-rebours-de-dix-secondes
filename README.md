@@ -1,5 +1,13 @@
-<img src="images/confirm.png" alt="Confirm Image" width="50%">
-<img src="images/succèss.png" alt="Success Image" width="50%">
+<div style="text-align: center;">
+  <img src="images/confirm.png" alt="Confirm Image" width="50%">
+  <p>C'est une image pour confirmer une action.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="images/succèss.png" alt="Success Image" width="50%">
+  <p>C'est une image pour indiquer un succès.</p>
+</div>
+
 
 
 
