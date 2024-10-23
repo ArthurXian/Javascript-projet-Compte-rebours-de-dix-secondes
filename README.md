@@ -1,5 +1,6 @@
-![Confirm Image](images/confirm.png)
-![Success Image](images/succèss.png)
+<img src="images/confirm.png" alt="Confirm Image" width="50%">
+<img src="images/succèss.png" alt="Success Image" width="50%">
+
 
 
 
