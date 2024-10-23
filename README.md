@@ -144,6 +144,81 @@ Il s'agit d'un projet simple en HTML, CSS et JavaScript simulant un processus de
 > 💡 **Conseil** : Rappelez-vous, les **parenthèses `()`** sont pour les **méthodes**, et **l'égalité `=`** est pour les **propriétés** !
 
 
+---
+
+# ✨ Notes sur le Timer JavaScript 🌟
+
+## 📌 1. Écouteur d'événement : `onload` ⏳
+- **`onload`** : Cet événement se déclenche lorsque l'objet (comme une page ou une image) **a fini de charger**.
+  - **Exemple** :
+    ```javascript
+    window.onload = function() {
+        // Le code ici sera exécuté lorsque la fenêtre aura fini de charger
+    }
+    ```
+  - **Utilisation** : Souvent utilisé pour initialiser des actions une fois que la page ou l'image est complètement chargée.
+
+---
+
+## 📌 2. Timer : `setInterval()` ⏰
+- **`setInterval()`** : Utilisé pour **configurer un minuteur** qui exécute une fonction **à intervalles réguliers**, en millisecondes.
+  - **Syntaxe** :
+    ```javascript
+    setInterval(fonction, millisecondes);
+    ```
+    - **1 seconde = 1000 millisecondes**, donc le code dans la fonction sera exécuté chaque fois que le délai spécifié est écoulé.
+  - **Exemple** :
+    ```javascript
+    setInterval(() => {
+        console.log("Exécution toutes les secondes !");
+    }, 1000);  // Exécution toutes les 1 seconde
+    ```
+
+---
+
+## 📌 3. Fonction fléchée : `() => {}` 🎯
+- **`() => {}`** : Ceci est une **fonction fléchée**, une façon plus concise d'écrire des fonctions.
+  - **`()`** : Ici, on peut placer des paramètres ;
+  - **`{}`** : Contient les instructions à exécuter.
+  - **Exemple** :
+    ```javascript
+    setInterval(() => {
+        // Instructions à exécuter
+    }, 1000);
+    ```
+
+---
+
+## 📌 4. Manipulation du DOM : `innerText` ✏️
+- **`innerText`** : Utilisé pour **obtenir ou définir** le contenu textuel d'un élément HTML.
+  - **Syntaxe** :
+    ```javascript
+    document.getElementById('elementId').innerText = "Nouveau contenu";
+    ```
+  - **Utilisation** : Permet de mettre à jour le texte affiché sur la page.
+  - **Exemple** :
+    ```javascript
+    document.getElementById('jumpTo').innerText = timer;
+    ```
+
+---
+
+## 📌 5. Opérateur de décrémentation : `timer--` 🔢
+- **`timer--`** : C'est un opérateur de décrémentation, qui diminue la valeur de `timer` de **1**.
+  - **Exemple** :
+    ```javascript
+    timer--;  // Équivaut à timer = timer - 1
+    ```
+  - **Utilisation** : Souvent utilisé dans les logiques de compte à rebours ou de comptage.
+
+---
+
+> 💡 **Conseil** : Souvenez-vous que `setInterval()` permet d'exécuter du code **à intervalles réguliers**, et que l'opérateur de décrémentation permet de réduire la valeur d'une variable progressivement. Combinez les deux pour réaliser un compte à rebours facilement ! ⏲️
+
+
+---
+
+
 # ✨ JavaScript 笔记 🌟
 
 ## 📌 1. 数组与索引
@@ -249,5 +324,78 @@ Il s'agit d'un projet simple en HTML, CSS et JavaScript simulant un processus de
 ---
 
 > 💡 **提示**：牢记 `()` 是**方法**，`=` 是**属性**，你就不会搞错了！
+
+ 
+---
+
+> # ✨ JavaScript 定时器笔记 🌟
+
+## 📌 1. 事件监听：`onload` ⏳
+- **`onload`**：表示当对象（例如页面或图像）**加载完成时触发某些操作**。
+  - **例子**：
+    ```javascript
+    window.onload = function() {
+        // 当 window 加载完毕后，执行此函数内的代码
+    }
+    ```
+  - **用途**：常用于当页面或图片加载完后，执行一些初始化的逻辑。
+
+---
+
+## 📌 2. 定时器：`setInterval()` ⏰
+- **`setInterval()`**：设置一个**定时器**，以**毫秒**为单位，**每隔一定时间重复执行一个函数**。
+  - **语法**：
+    ```javascript
+    setInterval(函数, 毫秒数);
+    ```
+    - **1s = 1000 毫秒**，也就是说，每隔指定的毫秒数，执行一次函数。
+  - **例子**：
+    ```javascript
+    setInterval(() => {
+        console.log("每秒执行一次！");
+    }, 1000);  // 每秒执行一次
+    ```
+
+---
+
+## 📌 3. 箭头函数：`() => {}` 🎯
+- **`() => {}`**：这是**箭头函数**，一种简写的函数定义方式。
+  - **`()`**：这里可以放参数；
+  - **`{}`**：这里放你要执行的操作。
+  - **例子**：
+    ```javascript
+    setInterval(() => {
+        // 执行的操作
+    }, 1000);
+    ```
+
+---
+
+## 📌 4. DOM 操作：`innerText` ✏️
+- **`innerText`**：用于**获取或设置**某个 HTML 元素的**文本内容**。
+  - **语法**：
+    ```javascript
+    document.getElementById('elementId').innerText = "新内容";
+    ```
+  - **用途**：可以实时更新网页上的文本显示。
+  - **例子**：
+    ```javascript
+    document.getElementById('jumpTo').innerText = timer;
+    ```
+
+---
+
+## 📌 5. 递减运算符：`timer--` 🔢
+- **`timer--`**：是递减操作符，表示将变量 `timer` 的**值减 1**。
+  - **例子**：
+    ```javascript
+    timer--;  // 等价于 timer = timer - 1
+    ```
+  - **用途**：常用于倒计时或者计数逻辑。
+
+---
+
+> 💡 **提示**：牢记 `setInterval()` 可以让代码**每隔一段时间执行一次**，而递减运算符可以让变量的值逐步减少。结合这两个功能，你就能轻松实现倒计时功能啦！ ⏲️
+
 
 
