@@ -1,5 +1,6 @@
-![Confirm Image](confirm.png)
-![Success Image](succèss.png)
+![Confirm Image](images/confirm.png)
+![Success Image](images/succèss.png)
+
 
 
 
