@@ -40,7 +40,7 @@ Il s'agit d'un projet simple en HTML, CSS et JavaScript simulant un processus de
 # ✨ Notes JavaScript 🌟
 
 ## 📌 1. Tableaux et Index
-- **`[ ] [ ]`** : Cela indique que nous voulons récupérer l'élément à l'intérieur de `()` en utilisant l'index (à partir de 0).
+- **`（） [ ]`** : Cela indique que nous voulons récupérer l'élément à l'intérieur de `()` en utilisant l'index (à partir de 0).
 
 ---
 
@@ -147,7 +147,7 @@ Il s'agit d'un projet simple en HTML, CSS et JavaScript simulant un processus de
 # ✨ JavaScript 笔记 🌟
 
 ## 📌 1. 数组与索引
-- **`[ ] [ ]`**：表示我们要获取 `()` 里面第几个元素，从 **0** 开始计数。
+- **`（） [ ]`**：表示我们要获取 `()` 里面第几个元素，从 **0** 开始计数。
 
 ---
 
