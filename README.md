@@ -1,3 +1,7 @@
+
+
+
+
 # Projet Simple de Confirmation de Paiement
 
 Il s'agit d'un projet simple en HTML, CSS et JavaScript simulant un processus de confirmation de paiement pour des produits. Le projet est composé de deux pages HTML :
